@@ -74,3 +74,15 @@ p.weather-temp {
     font-size: 1.7rem;
     margin-left: -10px;
 }
+
+.time-quote {
+    margin: 0 auto;
+}
+.time-quote > h1 {
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.3rem;
+}
+

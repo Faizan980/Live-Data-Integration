@@ -56,3 +56,10 @@ navigator.geolocation.getCurrentPosition(position => {
         })
         .catch(err => console.error(err))
 });
+
+fetch("https://type.fit/api/quotes")
+    .then(res => res.json())
+    .then(quote => {
+        const randomQuote = quote[Math.floor(Math.random()*quote.length)]
+        document.getElementById("quote").innerHTML = `"${randomQuote.text}"`
+    })
